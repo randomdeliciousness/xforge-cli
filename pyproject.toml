@@ -1,0 +1,27 @@
+[project]
+name = "xforge-cli"
+version = "0.1.0"
+description = "xAI-inspired Mixture-of-Experts coding CLI"
+requires-python = ">=3.10"
+dependencies = [
+    "textual", "typer", "rich", "xai-sdk", "python-dotenv",
+    "tree-sitter", "tree-sitter-languages",
+]
+
+[project.optional-dependencies]
+dev = ["ruff", "mypy"]
+ml = ["sentence-transformers", "numpy"]
+
+[project.scripts]
+xforge = "xforge.main:app"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/xforge-cli"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
