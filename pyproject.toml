@@ -16,7 +16,7 @@ ml = ["sentence-transformers", "numpy"]
 xforge = "xforge.main:app"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/xforge-cli"
+Homepage = "https://github.com/randomdeliciousness/xforge-cli"
 
 [build-system]
 requires = ["setuptools>=45", "wheel"]
