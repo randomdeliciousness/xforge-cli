@@ -25,9 +25,9 @@ def start(
     print("🧪 Running demo task with router...")
     try:
         result = orchestrator.process("Implement a new feature for the coding assistant")
-        print(f"✅ Demo complete: {result}")
+        print(f"Demo complete: {result}")
     except Exception as e:
-        print(f"⚠️  Demo error (likely missing XAI_API_KEY): {e}")
+        print(f"Demo error (likely missing XAI_API_KEY or modules): {e}")
     
     print("\n💡 Foundation complete! Run with: python -m xforge.main start")
     print("To use full TUI: set XAI_API_KEY and uncomment ui_app.run() in main.py")
